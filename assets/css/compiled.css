@@ -370,6 +370,12 @@ body {
   max-width: 95%;
   margin-left: auto;
   margin-right: auto; }
+  body ::-moz-selection {
+    background-color: #ff851b;
+    color: #FFFFFF; }
+  body ::selection {
+    background-color: #ff851b;
+    color: #FFFFFF; }
   body::after {
     clear: both;
     content: "";
@@ -394,6 +400,9 @@ body {
     justify-content: space-around; }
     .page_wrap .left_column .left_column_position .contact {
       margin-left: 50px; }
+      @media only screen and (max-width: 1000px) {
+        .page_wrap .left_column .left_column_position .contact {
+          font-size: 12px; } }
       .page_wrap .left_column .left_column_position .contact p {
         margin-bottom: 0;
         color: #ff851b;
@@ -401,13 +410,16 @@ body {
       .page_wrap .left_column .left_column_position .contact .contact_links {
         margin: 0 auto;
         text-align: center; }
-      .page_wrap .left_column .left_column_position .contact a {
-        color: #ff851b;
-        font-size: 2em;
-        margin: 0 20px; }
-        .page_wrap .left_column .left_column_position .contact a:hover {
-          color: #ff291d; }
+        .page_wrap .left_column .left_column_position .contact .contact_links a {
+          color: #ff851b;
+          font-size: 2em;
+          margin: 0 20px; }
+          .page_wrap .left_column .left_column_position .contact .contact_links a:hover {
+            color: #ff291d; }
 
+@media only screen and (max-width: 450px) {
+  .page_wrap .left_column {
+    display: none; } }
 .right_column {
   float: left;
   display: block;
@@ -422,14 +434,14 @@ body {
     margin-bottom: 150px; }
     .right_column .header h1 {
       color: #ff851b;
-      font-size: 4em;
+      font-size: 3em;
       text-transform: uppercase;
       margin: 0;
       letter-spacing: 0.2em; }
     .right_column .header h5 {
       color: #FFFFFF;
       font-family: "Varela Round", sans-serif;
-      font-size: 1.3em;
+      font-size: 1.1em;
       font-weight: 100;
       padding-left: 6px; }
   .right_column .projects_wrapper {
@@ -441,27 +453,27 @@ body {
         box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
       .right_column .projects_wrapper .project a h2.rgbyk {
         color: #001f3f;
-        font-size: 3.5em;
+        font-size: 3em;
         margin: 0; }
       .right_column .projects_wrapper .project a h4.rgbyk {
         font-family: "Varela Round", sans-serif;
-        font-size: 1.6em;
+        font-size: 1.35em;
         font-weight: 100;
         color: #FFFFFF; }
       .right_column .projects_wrapper .project a h2.msngfd {
         color: #ff851b;
-        font-size: 3.5em;
+        font-size: 3em;
         margin: 0; }
       .right_column .projects_wrapper .project a h4.msngfd {
         font-family: "Varela Round", sans-serif;
-        font-size: 0.825em;
+        font-size: 0.715em;
         font-weight: 100;
         color: #FFFFFF;
         letter-spacing: 0.1em;
         margin-bottom: 20px; }
       .right_column .projects_wrapper .project a h2.pinclone {
         color: #001f3f;
-        font-size: 3.5em;
+        font-size: 3em;
         font-family: "Varela Round", sans-serif;
         margin: 0; }
       .right_column .projects_wrapper .project a p {
@@ -469,3 +481,53 @@ body {
         font-family: "Varela Round", sans-serif;
         font-size: 0.7em;
         font-weight: 100; }
+  .right_column .contact {
+    display: none; }
+  @media only screen and (max-width: 1000px) {
+    .right_column .header {
+      margin-bottom: 50px; }
+      .right_column .header h1 {
+        font-size: 2em; }
+    .right_column .projects_wrapper .project a h2.rgbyk {
+      font-size: 2em; }
+    .right_column .projects_wrapper .project a h4.rgbyk {
+      font-size: 0.8em; }
+    .right_column .projects_wrapper .project a h2.msngfd {
+      font-size: 2em; }
+    .right_column .projects_wrapper .project a h4.msngfd {
+      font-size: 7.9px; }
+    .right_column .projects_wrapper .project a h2.pinclone {
+      font-size: 3em; }
+    .right_column .projects_wrapper .project a p {
+      font-size: 0.7em; } }
+  @media only screen and (max-width: 700px) {
+    .right_column .projects_wrapper .project a h2.pinclone {
+      font-size: 3em; }
+    .right_column .projects_wrapper .project a p {
+      font-size: 0.5em; } }
+
+@media only screen and (max-width: 450px) {
+  .right_column {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    .right_column:last-child {
+      margin-right: 0; }
+    .right_column .contact {
+      display: block;
+      margin: 0 auto;
+      text-align: center; }
+      .right_column .contact p {
+        margin-bottom: 0;
+        color: #ff851b;
+        font-size: 1em; }
+      .right_column .contact .contact_links {
+        margin: 0 auto;
+        text-align: center; }
+        .right_column .contact .contact_links a {
+          color: #ff851b;
+          font-size: 1em;
+          margin: 0 5px; }
+          .right_column .contact .contact_links a:hover {
+            color: #ff291d; } }

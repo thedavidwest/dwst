@@ -9,6 +9,8 @@
     justify-content: space-around
     .contact
       margin-left: 50px
+      @media only screen and (max-width: 1000px)
+        font-size: 12px
       p
         margin-bottom: 0
         color: $orange
@@ -16,9 +18,13 @@
       .contact_links
         margin: 0 auto
         text-align: center
-      a
-        color: $orange
-        font-size: 2em
-        margin: 0 20px
-        &:hover
-          color: darken($red, 5%)
+        a
+          color: $orange
+          font-size: 2em
+          margin: 0 20px
+          &:hover
+            color: darken($red, 5%)
+
+@media only screen and (max-width: 450px)
+  .page_wrap .left_column
+    display: none
