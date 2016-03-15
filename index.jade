@@ -1,0 +1,46 @@
+doctype html
+html#top(lang="en")
+  head
+    meta(charset="utf-8")
+    title dwst
+    meta(name="description", content="")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700", type="text/css")
+    link(rel="stylesheet", href="assets/css/compiled.css")
+    link(rel="icon", type="image/png", href="assets/img/favicon.png")
+
+  body
+    .page_wrap
+      .left_column
+        .left_column_position
+          .contact
+            p contact me
+            .contact_links
+              a(href='https://github.com/thedavidwest', target='_blank')
+                i.fa.fa-github-alt
+              a(href='mailto:thedavidwest@gmail.com', target='_top')
+                i.fa.fa-envelope
+      .right_column
+        .header
+          h1.name David West
+          h5.title creative
+        .projects_wrapper
+          .project
+            a(href='http://rgbyk.herokuapp.com', target='_blank')
+              h2.rgbyk RGBYK
+              h4.rgbyk color palettes
+              p.description Browse through recently created color palettes or create your own. A simple click-to-copy function makes it easy to grab your favorite colors and insert them into your designs.
+          .project
+            a(href='http://dw-missingfeed.herokuapp.com/', target='_blank')
+              h2.msngfd MSNGFD
+              h4.msngfd music videos missing from your life
+              p.description Randomly selected music videos at the push of a button. Upload your own to add to the rotation.
+          .project
+            a(href='http://www.rgbyk.herokuapp.com', target='_blank')
+              h2.pinclone müse
+              p.description Browse through recently created color palettes or create your own. A simple click-to-copy function makes it easy to grab your favorite colors and insert them into your designs.
+
+script(src="assets/js/jquery-2.1.4.min.js")
+script(src="assets/js/functions.js")
