@@ -471,12 +471,12 @@ body {
         color: #FFFFFF;
         letter-spacing: 0.1em;
         margin-bottom: 20px; }
-      .right_column .projects_wrapper .project a h2.pinclone {
+      .right_column .projects_wrapper .project h2.pinclone {
         color: #001f3f;
         font-size: 3em;
-        font-family: "Varela Round", sans-serif;
-        margin: 0; }
-      .right_column .projects_wrapper .project a p {
+        margin: 0;
+        text-transform: uppercase; }
+      .right_column .projects_wrapper .project p {
         color: #FFFFFF;
         font-family: "Varela Round", sans-serif;
         font-size: 0.7em;
